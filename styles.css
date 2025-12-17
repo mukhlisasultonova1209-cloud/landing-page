@@ -139,7 +139,7 @@ body{
     justify-content: center;
     background-color:#272626;
     width: 270px;
-    height: 270px;
+    height: 300px;
     border-radius: var(--btn-radius);
 }
 
@@ -151,5 +151,25 @@ body{
 .card_text{
     font-size: 18px;
     margin-block: 30px;
+}
+
+/* Section3 */
+
+.sctn3{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 120px 180px;
+}
+
+.phone_img{
+    width: 600px;
+    height: 500px;
+}
+
+.text_div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
