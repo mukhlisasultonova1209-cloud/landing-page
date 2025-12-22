@@ -4,7 +4,11 @@
     color: #FFFFFF;
     font-family: "Open Sans", sans-serif;
 }
-
+.container{
+    max-width: 1134px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
 :root {
     --bg-color: #000000;
     --btn-radius: 10px;
@@ -22,6 +26,7 @@ body {
     justify-content: space-around;
     padding: 39px;
     align-items: center;
+    position: relative;
 }
 
 .logo {
@@ -73,7 +78,6 @@ body {
     width: max-content;
     cursor: pointer;
     transition: 0.3s;
-    display: none;
 }
 
 .btns:hover {
@@ -230,6 +234,53 @@ body {
     list-style: none;
 }
 
+/* Responsive */
+
+.responcive{
+    background-color: #3A68B8;
+    width: 100px;
+    height: 100vh;
+    position: absolute;
+    top: -500%;
+    left: -500%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.responcive.open{
+    left: 0;
+    top: 0;
+    position: fixed;
+}
+
+.list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.navigation_btn{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.navigation_btn button{
+    padding: 20px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+.hamburger_btn{
+    display: none;
+}
+
 @media(max-width:360px) {
     .logo {
         font-size: 18px;
@@ -279,6 +330,122 @@ body {
     .img2{
         width: 340px;
         padding-left: 10px;
+    }
+
+    .apple_text{
+        font-size: 20px;
+        padding-top: 80px;
+    }
+
+    .text_card{
+        margin-left: 40px;
+    }
+
+    .img_card{
+        display: block;
+    }
+
+    .about{
+        font-size: 23px;
+    }
+
+    .text_div{
+        padding-left: 35px;
+    }
+
+    .tittle3{
+        font-size: 23px;
+    }
+
+    .text_div p{
+        font-size: 15px;
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sctn3{
+        display: block;
+        padding-block: 60px;
+    }
+
+    .phone_img{
+        padding-top: 50px;
+        width: 340px;
+        height: 340px;
+    }
+
+    .footer_contener{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-left: 30px;
+        align-items: flex-start;
+    }
+
+    .ftr_card{
+        gap: 8px;
+    }
+
+    .f_lorem{
+        font-size: 16px;
+    }
+
+    .menu{
+        font-size: 22px;
+    }
+}
+
+
+@media(max-width:412px) {
+    .logo {
+        font-size: 22px;
+    }
+
+    .header_list li {
+        display: none;
+    }
+
+    .btns {
+        padding: 15px 25px;
+        font-size: 16px;
+        display: none;
+    }
+
+    .hamburger_btn {
+        display: inline-block;
+    }
+
+    .img {
+        width: 340px;
+        height: 320px;
+        top: 270px;
+    }
+
+    .text_contener {
+        margin-left: 50px;
+        padding-top: 30px;
+    }
+
+    .text{
+        font-size: 22px;
+        width: 290px;
+    }
+
+    .text_contener p {
+        font-size: 16px;
+    }
+
+    .about{
+        margin-block: 22px;
+    }
+
+    .img2{
+        width: 340px;
+        padding-left:40px;
     }
 
     .apple_text{
